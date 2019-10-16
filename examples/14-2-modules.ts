@@ -1,6 +1,6 @@
 // Modules
 
-import { Calculator } from "./12-1-modules";
+import { Calculator } from "./14-1-modules";
 
 const instance = new Calculator();
 instance.add(10, 11);
