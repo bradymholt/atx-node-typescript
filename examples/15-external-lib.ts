@@ -9,6 +9,7 @@ import axios from "axios";
   console.log(breweries.data);
 })();
 
+//#region
 //.node_modules/axios/package.json:111 ("typings")
 
 // interface IBrewery {
@@ -24,3 +25,4 @@ import axios from "axios";
 //   breweries.data.map(b=>b.name);
 //   console.log(breweries.data.map(b=>b.name));
 // })();
+//#endregion

@@ -7,7 +7,9 @@ enum ColorHex {
 }
 
 let currentColor = ColorHex.Red;
+console.log(currentColor);
+
+//#region
 //currentColor = ColorHex.Purple;
 //currentColor = null;
-
-console.log(currentColor);
+//#endregion

@@ -12,6 +12,7 @@ const person: Person = {
   age: 24
 };
 
+//#region
 // const personWithNoLastName:Person = {
 //   firstName: "Sue",
 //   age: 24
@@ -28,3 +29,4 @@ const person: Person = {
 //   firstName: "Sue",
 //   age: 24
 // };
+//#endregion

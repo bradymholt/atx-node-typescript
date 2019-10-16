@@ -9,5 +9,7 @@ function move(instruction: Direction) {
 move("Up");
 move("Down");
 
+//#region
 //move(null);
 //move(undefined);
+//#endregion

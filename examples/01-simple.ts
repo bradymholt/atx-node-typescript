@@ -6,5 +6,7 @@ function greet(name: string) {
 
 greet("Brady");
 
+//#region
 //greeter(1);
 //greeter({ first_name: "Brady" });
+//#endregion
