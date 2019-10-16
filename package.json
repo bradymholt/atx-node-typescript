@@ -15,6 +15,10 @@
     "jbash": "^1.48.0",
     "lodash": "^4.17.15",
     "ts-node": "^8.4.1",
-    "typescript": "^3.7.0-beta"
+    "typescript": "^3.7.0-beta",
+    "ynab": "^1.17.0"
+  },
+  "prettier": {
+    "printWidth": 120
   }
 }
