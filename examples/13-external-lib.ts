@@ -1,13 +1,15 @@
+// External library (with included type definitions)
+
 import axios from "axios";
 
 (async function() {
   const breweries = await axios.request({
     url: "https://api.openbrewerydb.org/breweries?by_state=texas"
-  })  
+  });
   console.log(breweries.data);
 })();
 
-//.node_modules/axios/package.json:111
+//.node_modules/axios/package.json:111 ("typings")
 
 // interface IBrewery {
 //   id: number;
@@ -16,7 +18,7 @@ import axios from "axios";
 // }
 
 // (async function() {
-//   const breweries = await axios.default.request<Array<IBrewery>>({
+//   const breweries = await axios.request<Array<IBrewery>>({
 //     url: "https://api.openbrewerydb.org/breweries?by_state=texas"
 //   })
 //   breweries.data.map(b=>b.name);

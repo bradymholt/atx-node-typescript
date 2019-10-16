@@ -1,4 +1,6 @@
-import * as ts from "typescript";
+// Compiler API
+
+import ts from "typescript";
 
 const sourceFile = ts.createSourceFile(
   "foobar.ts",
@@ -20,13 +22,13 @@ function process(node: ts.Node) {
   switch (node.kind) {
     case ts.SyntaxKind.ClassDeclaration:
       const cd = <ts.ClassDeclaration>node;
-      out += `public class ${cd.name!.getText()} {\n`;
+      out += `\
+/* This is an Android wrapper class */      
+public class ${cd.name!.getText()} {\n`;
       break;
     case ts.SyntaxKind.PropertyDeclaration:
       const pd = <ts.PropertyDeclaration>node;
-      out += `  ${pd
-        .type!.getText()[0]
-        .toUpperCase()}${pd.type!.getText().slice(1)} ${pd.name.getText()};\n`;
+      out += `  ${pd.type!.getText()[0].toUpperCase()}${pd.type!.getText().slice(1)} ${pd.name.getText()};\n`;
       break;
   }
 

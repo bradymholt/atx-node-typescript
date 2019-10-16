@@ -1,27 +1,30 @@
+// Interfaces
+
 interface Person {
   firstName: string;
   lastName: string;
   age: number;
 }
 
-let newPerson: Person = {
+const person: Person = {
   firstName: "Sue",
   lastName: "Donaldson",
   age: 24
 };
 
-// let newPerson2: Person = {
-//   firstName: "Sue",  
+// const personWithNoLastName:Person = {
+//   firstName: "Sue",
 //   age: 24
 // };
 
+// // Optional Properties
 // interface MysteriousPerson {
 //   firstName: string;
-//   lastName?: string;
+//   lastName?: string; // ? means optional
 //   age: number;
 // }
 
-// let newPerson3: MysteriousPerson = {
-//   firstName: "Sue",  
+// let mysteryPerson: MysteriousPerson = {
+//   firstName: "Sue",
 //   age: 24
 // };
